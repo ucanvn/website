@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}" id="nav-home">HOME 首页</a>
+        <a href="{{ url_for('about') }}" id="nav-about">ABOUT US  介绍</a>
+        <a href="{{ url_for('contact') }}" id="nav-contact">CONTACT 联系我们</a>
+        <img src="{{ url_for('static', filename='images/vietnam-flag.png') }}" alt="Tiếng Việt" id="vi" class="flag">
+        <img src="{{ url_for('static', filename='images/china-flag.png') }}" alt="中文" id="cn" class="flag">
+        
+    </nav>
+    <header>
+        <div class="header-content">
+            <p class="company">UC AN VIET NAM COMPANY LIMITED </p>
+            <p class="phone">Hotline: 077.2016.888 Zalo : 077.2016.888</p>
+            <p class="email">Email: hyngocvan88shanhong@gmail.com</p>
+            <P class="adress">Group 3, Vinh Tuy Hamlet, Long Tan Commune, Nhon Trach District, Dong Nai Province, Vietnam</P>
+        </div>
+    </header>
+    <main>
+        <div class="page-container">
+            <div class="page-fade">
+                <div class="banner">
+                    <img src="static/baner.jpg" alt="Hình ảnh 1" class="banner">
+                </div>
+            </div>
+        </div>      
+    </main>
+    <noi_dung_ab>
+
+        <div class='noi_dung_1_ab'>
+           <p>UC AN VIET NAM COMPANY LIMITED<br>
+            Always pursuing the business philosophy of 'quality first, customer first,' and producing high-quality products that meet customer satisfaction with sincerity, excellent quality, and competitive prices.<br>
+            越南忆恩有限公司<br>
+            公司宗旨是：我们会坚定不移的奉行“质量第一、客户至上的经营理念，以真诚的态度、优良的质量、竞争力的价格”为广大客户生产满意的优质产品。
+
+            </p>
+        </div>
+    </noi_dung_ab>
+    <san_pham_ab>
+        <div class="san_pham_1_ab">
+            <h1>GOALS AND STRATEGY<br>公司宗旨是</h1>
+            
+        </div>
+        
+        <div class='thong_tin_sp_ab'>
+            <p>Our company has been and continues to serve numerous clients in the hat manufacturing and trading industry both domestically and internationally.<br> 
+            我们公司一直为国内外帽子制造和贸易客户提供服务。<br>
+            We currently have excellent masters in design and cutting, advanced sewing, embroidery, and printing equipment, forming a complete assembly line that includes cutting, sewing, embroidery or printing, shaping, ironing, and packaging, etc., to ensure production and delivery times, meeting various customer requirements.<br>
+            同国家的客人服务，我们现拥有优秀的设计和裁剪师傅，先进的缝制，绣花及印花设备，形成裁制、缝制、绣花或印花、定型、整烫、包装等完整的流水线能确保生产和出货时间，满足厂家的各种需求<br>
+            Since its establishment, with excellent product quality and good customer service, and receiving significant interest and enthusiastic support from valued partners and customers, the company has continuously developed and expanded its production scale.<br>
+            自创建以来，承蒙社会各界朋友的热忱关心和支持，经营业务不断扩展，生产规模日益扩大，凭着过硬的质量和良好的服务体系为不同行业
+
+            </p>
+             
+        </div>
+    </san_pham_ab>
+    <cuoi_dong_ab>
+        <div class='cuoi_dong_ab'>
+            <img src="static/foot.jpg" alt="Hình ảnh 2" class="image-left">
+        </div>
+    </cuoi_dong_ab>
+</body>
+</html>

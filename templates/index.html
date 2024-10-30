@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}" id="nav-home">TRANG CHỦ 首页</a>
+        <!-- <a href="{{ url_for('about') }}" id="nav-about">GIỚI THIỆU  介绍</a> -->
+        <a href="{{ url_for('contact') }}" id="nav-contact">LIÊN HỆ 联系我们</a>
+        <div class="flags">
+            <img src="{{ url_for('static', filename='images/vietnam-flag.png') }}" alt="Tiếng Việt" id="vi" class="flag">
+            <img src="{{ url_for('static', filename='images/china-flag.png') }}" alt="中文" id="cn" class="flag">
+        </div>
+        
+    </nav>
+    <header>
+        <div class="header-content">
+            <p class="company">Công ty TNHH ỨC ÂN VIỆT NAM </p>
+            <p class="phone">Hotline: 077.2016.888 - 0378.353.732 Zalo : 077.2016.888</p>
+            <p class="email">Email: hyngocvan88shanhong@gmail.com</p>
+            <P class="adress">Địa chỉ: Tổ 3, ấp Vĩnh Tuy, Xã Long Tân, Huyện Nhơn Trạch, Tỉnh Đồng Nai</P>
+        </div>
+    </header>
+    <main>
+        <div class="page-container">
+            <div class="page-fade">
+                <div class="banner">
+                    <img src="static/baner.jpg" alt="Hình ảnh 1" class="banner">
+                </div>
+            </div>
+        </div>      
+    </main>
+    <noi_dung>
+        <div class="cty1">
+            <h1><span style="font-family:Sisum; font-size: 25px;">越南忆恩有限公司</span><br>Công ty TNHH Ức Ân Việt Nam</h1>
+            
+        </div>
+        <div class='noi_dung_1'>
+           <p><span style="font-family:Sisum; font-size: 25px;">越南忆恩有限公司成立于2023年，是经过国家相关部门批准注册企业，是一家集设计，制版，生产，裁剪，绣花，熨烫，包装于一体的专业帽子工厂。</span><br>
+            Công ty TNHH Ức Ân Việt Nam được Sở kế hoạch đầu tư phê duyệt thành lập vào năm 2023. Đây là nhà máy sản xuất mũ chuyên nghiệp bao gồm tất cả công đoạn :  thiết kế, sản xuất tấm, cắt, thêu, ủi và đóng gói.
+            </p>
+        </div>
+        <div class="ho_so">
+            <h1>公司简介<br>Hồ sơ công ty</h1>
+            
+        </div>
+        <div class='noi_dung_hs'>
+           <p><span style="font-family:Sisum; font-size: 25px;">越南忆恩有限公司地址于越南同奈省仁泽县隆新社Vinh Tuy区3号小区。现有员工150以上，自创建以来，承蒙社会各界朋友的热忱关心和支持，经营业务不断扩展，生产规模日益扩大，凭着过硬的质量和良好的服务体系为不同行业，不
+            同国家的客人服务，我们现拥有优秀的设计和裁剪师傅，先进的缝制，绣花及印花设备，形成裁制、缝制、绣花或印花、定型、整烫、包装等完整的流水线能确保生产和出货时间，满足厂家的各种需求。</span>
+            <br>
+            Công ty TNHH Ức Ân Việt Nam  tọa lạc tại Tổ 3, ấp Vĩnh Tuy, Xã Long Tân, Huyện Nhơn Trạch, Tỉnh Đồng Nai, Việt Nam. 
+            Có hơn 150 nhân viên . 
+            Kể từ khi thành lập với chất lượng sản phẩm tuyệt vời và dịch vụ chăm sóc khách hàng tốt . Đồng thời nhận được nhiều quan tâm và hỗ trợ nhiệt tình của quý đối tác, khách hàng . Công ty đã không ngừng phát triển và quy mô sản xuất ngày càng mở rộng  . 
+            Hiện chúng tôi có các bậc thầy về thiết kế và cắt xuất sắc, thiết bị may, thêu và in tiên tiến, tạo thành một dây chuyền lắp ráp hoàn chỉnh gồm cắt, may, thêu hoặc in, tạo hình, ủi, đóng gói. , v.v. để đảm bảo thời gian sản xuất và vận chuyển, đáp ứng các nhu cầu khác nhau của khách hàng yêu cầu.
+            Công ty chúng tôi đã và đang phục vụ rất nhiều các khách hàng ngành sản xuất và thương mại nón trong và ngoài nước. 
+
+            </p>
+        </div>
+
+        
+
+    </noi_dung>
+   
+    <san_pham>
+        <div class="san_pham_1">
+            <h1><span style="font-family:Sisum; font-size: 25px;">主营产品 </span> <br>Sản phẩm chính</h1>
+            
+        </div>
+        
+        <div class='thong_tin_sp'>
+            <p><span style="font-family:Sisum; font-size: 25px;">产品分为：棒球帽、旅游帽、太阳帽、运动帽、空顶帽、网帽、童帽、平顶帽、洗水帽、等各类帽子。</span><br>Các sản phẩm : mũ bóng chày, mũ du lịch, mũ che nắng, mũ thể thao, mũ rỗng, mũ lưới, mũ trẻ em, mũ dẹt, mũ giặt và các loại mũ khác.
+            </p>
+             
+        </div>
+    </san_pham>
+    <nhan_vien>
+        <div class="nhan_vien_1">
+            <h1>公司宗旨是<br>Mục đích kinh doanh</h1>
+            
+        </div>
+        
+        <div class='thong_tin_nv'>
+            <p><span style="font-family:Sisum; font-size: 25px;">我们会坚定不移的奉行“质量第一、客户至上的经营理念，以真诚的态度、优良的质量、竞争力的价格”为广大客户生产满意的优质产品。</span><br>
+                Mục đích của công ty : Công ty TNHH Ức Ân luôn theo đuổi triết lý kinh doanh "chất lượng là trên hết, khách hàng là trên hết và sản xuất ra những sản phẩm chất lượng cao vừa ý cho khách hàng với thái độ chân thành, chất lượng tuyệt vời và giá cả cạnh tranh."
+
+
+            </p>
+             
+        </div>
+    </nhan_vien>
+    <cuoi_dong>
+        <div class='cuoi_dong'>
+            <img src="static/foot.jpg" alt="Hình ảnh 2" class="image-left">
+        </div>
+    </cuoi_dong>
+</body>
+</html>

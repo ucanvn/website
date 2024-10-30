@@ -1,0 +1,296 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    background-color: #0097b2;
+    color: White;
+    padding: 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Chiều cao 100% của header để chứa các phần tử */
+    box-sizing: border-box;
+}
+
+.company {
+    position: absolute;
+    top: 0px; /* Cách cạnh trên 1 pixel */
+    left: 200px; /* Khoảng cách từ cạnh trái của header */
+    margin: 0; /* Loại bỏ margin nếu không cần thiết */
+    padding: 0; /* Loại bỏ padding nếu không cần thiết */
+    line-height: 33px; /* Điều chỉnh để căn chỉnh nội dung dọc nếu cần */
+    box-sizing: border-box; /* Đảm bảo kích thước tính toán đúng */
+}
+.adress {
+    position: absolute;
+    top: 20px; /* Cách cạnh trên 1 pixel */
+    left: 200px; /* Khoảng cách từ cạnh trái của header */
+    margin: 0; /* Loại bỏ margin nếu không cần thiết */
+    padding: 0; /* Loại bỏ padding nếu không cần thiết */
+    line-height: 33px; /* Điều chỉnh để căn chỉnh nội dung dọc nếu cần */
+    box-sizing: border-box; /* Đảm bảo kích thước tính toán đúng */
+}
+
+.phone {
+    position: absolute;
+    top: 0px; /* Cách cạnh trên 1 pixel */
+    left: 900px; /* Khoảng cách từ cạnh trái của header */
+    margin: 0; /* Loại bỏ margin nếu không cần thiết */
+    padding: 0; /* Loại bỏ padding nếu không cần thiết */
+    line-height: 33px; /* Điều chỉnh để căn chỉnh nội dung dọc nếu cần */
+    box-sizing: border-box; /* Đảm bảo kích thước tính toán đúng */
+}
+
+.email {
+    position: absolute;
+    top: 20px; /* Cách cạnh trên 1 pixel */
+    left: 900px; /* Khoảng cách từ cạnh trái của header */
+    margin: 0; /* Loại bỏ margin nếu không cần thiết */
+    padding: 0; /* Loại bỏ padding nếu không cần thiết */
+    line-height: 33px; /* Điều chỉnh để căn chỉnh nội dung dọc nếu cần */
+    box-sizing: border-box; /* Đảm bảo kích thước tính toán đúng */
+}
+
+
+main {
+    margin-top: 40px; /* Đẩy nội dung xuống dưới thanh header */
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.image-right {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng của phần tử */
+    height: auto;
+}
+
+.hinh_anh img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: 45px;
+    height: 35px;
+    background-color: White;
+    color: Black;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: black;               /* Màu chữ */
+    text-decoration: none;      /* Không gạch chân */
+    padding: 10px 20px;         /* Padding */
+    display: inline-block;      /* Hiển thị dạng inline-block */
+    font-size: 28px;            /* Kích thước chữ */
+    /*font-family: 'Arial', sans-serif; /* Font chữ */
+}
+#nav-home {
+    margin-left: 400px; /* Khoảng cách giữa "TRANG CHỦ" và "LIÊN HỆ" */
+}
+#nav-contact {
+    margin-right: 400px; /* Khoảng cách giữa "TRANG CHỦ" và "LIÊN HỆ" */
+}
+nav a:hover {
+   
+    background-color: White;
+}
+
+/* CSS cho hình ảnh cờ */
+.flags {
+    position: absolute;
+    top: 80px; /* Đặt phần tử giữa chiều cao của nav */
+    right: 100px; /* Cách mép phải 100px */
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa chiều dọc */
+    cursor: pointer;
+}
+
+/* CSS cho hình ảnh cờ */
+.flag {
+    width: 30px; /* Kích thước tùy chỉnh cho hình ảnh cờ */
+    height: auto; /* Đảm bảo tỷ lệ khung hình đúng */
+    margin-left: 20px; /* Khoảng cách giữa các hình ảnh cờ */
+}
+.page-container {
+    position: absolute;
+    overflow: hidden;
+    top: 110px;
+}
+
+.page-fade {
+    transition: transform 0.5s ease;
+    transform: translateX(0);
+}
+
+.page-fade.slide-left {
+    transform: translateX(-100%);
+}
+
+
+.noi_dung { display: block; }
+.cuoi_dong { display: block; }
+.san_pham { display: block; }
+.nhan_vien { display: block; }
+
+
+.cty1, .san_pham_1, .nhan_vien_1,.ho_so {
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: Black;
+    height: 20px;
+}
+
+.cty1 { top: 390px;  left: 50%; transform: translateX(-50%); }
+.ho_so { top: 670px;  left: 50%; transform: translateX(-50%); }
+.san_pham_1 { top: 1200px;  left: 50%; transform: translateX(-50%); }
+.nhan_vien_1 { top: 1450px; left: 50%; transform: translateX(-50%); }
+
+.noi_dung_1 p, .thong_tin_sp p, .thong_tin_nv p, .noi_dung_hs p{
+    position: absolute;
+    text-align: justify;
+    float: left;
+    width: 70%;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-right: 20px;
+}
+
+.noi_dung_1 p { top: 490px;  left: 50%; transform: translateX(-50%); }
+.noi_dung_hs p{ top: 770px;  left: 50%; transform: translateX(-50%); }
+.thong_tin_sp p { top: 1300px;  left: 50%; transform: translateX(-50%); }
+.thong_tin_nv p { top: 1550px;  left: 50%; transform: translateX(-50%); }
+
+.cuoi_dong img {
+    position: absolute;
+    top: 1800px;
+    width: 100%;
+
+}
+
+
+
+
+.noi_dung_ab { display: block; }
+.noi_dung_1_ab p {
+    position: absolute;
+    top: 480px;  left: 50%; transform: translateX(-50%);
+    text-align: justify;
+    float: left;
+    width: 70%;
+    font-size: 20px;
+    line-height: 1.6;
+   
+    margin-right: 20px;
+}
+
+.san_pham_ab { display: block; }
+.san_pham_1_ab h1  {
+    position: absolute;
+    top: 730px;  left: 50%; transform: translateX(-50%);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: Black;
+    height: 20px;
+}
+.thong_tin_sp_ab p {
+    position: absolute;
+    top: 800px;  left: 50%; transform: translateX(-50%);
+    text-align: justify;
+    float: left;
+    width: 70%;
+    font-size: 20px;
+    line-height: 1.6;
+
+    margin-right: 20px;
+}
+
+.cuoi_dong_ab img {
+    position: absolute;
+    top: 1300px;
+    width: 100%;
+
+}
+
+.lien_he{ display: block; }
+.lien_he_1 h1{
+    position: absolute;
+    top: 400px;  left: 50%; transform: translateX(-50%);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: Black;
+    height: 20px;
+}
+.thong_tin_lien_he p {
+    position: absolute;
+    top: 420px;  left: 50%; transform: translateX(-50%);
+    text-align: justify;
+    float: left;
+    width: 70%;
+    font-size: 20px;
+    line-height: 1.6;
+  
+    margin-right: 20px;
+}
+.lien_he_cn h1{
+    position: absolute;
+    top: 640px;  left: 50%; transform: translateX(-50%);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: Black;
+    height: 20px;
+}
+.thong_tin_lien_he_cn p {
+    position: absolute;
+    top: 670px;  left: 50%; transform: translateX(-50%);
+    text-align: justify;
+    float: left;
+    width: 70%;
+    font-size: 20px;
+    line-height: 1.6;
+
+    margin-right: 20px;
+}
+.cuoi_dong_contact img {
+    position: absolute;
+    top: 1000px;
+    width: 100%;
+}
